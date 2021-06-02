@@ -1,7 +1,7 @@
 """
 A simple temperature monitor GUI for Raspberry Pi running OS Raspbian. Written with tkinter since PyQt is not available
-for Raspberry Pi. Due to the small amount of code, the whole code was placed in one file for ease of transfer even though
-it might be at the cost of a clearer structure.
+for Raspberry Pi. Due to the small amount of code, the whole code was placed in one file for ease of transfer even
+though it might be at the cost of a clearer structure.
 
 Author: Victor Nilsson, Date: 2020-10-10, github: vanilsson.
 """
@@ -13,9 +13,10 @@ import signal
 import os
 
 
-def temp_monitor():
+def temp_monitor() -> None:
     """
-    Changes layout of GUI-window: Adds a divider, labels for CPU and GPU temperature, and changes function and text of the button.
+    Changes layout of GUI-window: Adds a divider, labels for CPU and GPU temperature, and changes function and text
+    of the button.
     """
 
     if len(entry_update_interval.get()) > 0:
@@ -40,7 +41,7 @@ def temp_monitor():
     read_temps(update_interval, label_gpu_temp, label_cpu_temp)
 
 
-def read_temps(update_interval, label_gpu_temp, label_cpu_temp):
+def read_temps(update_interval: float or int, label_gpu_temp: tk.Label, label_cpu_temp: tk.Label) -> None:
     """
     Reads the CPU and GPU temperature and updates the labels that display them at a given interval.
 
@@ -71,7 +72,7 @@ def read_temps(update_interval, label_gpu_temp, label_cpu_temp):
         stop_temp_monitor()
 
 
-def stop_temp_monitor():
+def stop_temp_monitor() -> None:
     """
     To kill thread started by Timer.
     """
