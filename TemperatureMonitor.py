@@ -1,7 +1,7 @@
 """
-A simple temperature monitor GUI written in tkinter for Raspberry Pi running OS Raspbian. Due to the small amount 
-of code, the whole code is placed in one file for ease of transfer even though it might be at the cost of a clearer 
-structure.
+A simple temperature monitor GUI written in Python and tkinter for Raspberry Pi running OS Raspbian. Due to the 
+small amount of code, the whole code is placed in one file for ease of transfer even though it might be at the 
+cost of a clearer structure.
 
 Author: Victor Nilsson, Date: 2020-10-10, github: vanilsson.
 """
