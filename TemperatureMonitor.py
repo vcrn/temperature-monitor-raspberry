@@ -3,7 +3,7 @@ A simple temperature monitor GUI written in Python and tkinter for Raspberry Pi 
 small amount of code, the whole code is placed in one file for ease of transfer even though it might be at the 
 cost of a clearer structure.
 
-Author: Victor Nilsson, Date: 2020-10-10, github: vanilsson.
+Author: Victor Nilsson, Date: 2020-10-10, github: vcrn.
 """
 
 import tkinter as tk
